@@ -97,8 +97,8 @@ function BioCell() {
       <div className="space-y-4">
         <p>
           I'm a recent Computer Science graduate from the University of
-          Victoria. I like analyzing data, and I like building the tools that
-          let others analyze data too.
+          Victoria. I like working with data, and I like building the tools that
+          let other people work with data too.
         </p>
 
         <p>
