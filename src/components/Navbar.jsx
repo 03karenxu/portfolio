@@ -50,7 +50,7 @@ export default function NavBar() {
         );
       })}
       <a
-        href="/resume.pdf"
+        href={`${import.meta.env.BASE_URL}resume.pdf`}
         target="_blank"
         className="hover:text-aqua hidden transition-colors duration-100 ease-in md:block"
       >

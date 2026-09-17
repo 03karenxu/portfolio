@@ -17,7 +17,7 @@ export default function Home({ ready }) {
       <img
         id="home-img-cell"
         ref={photoRef}
-        src="/profile.png"
+        src={`${import.meta.env.BASE_URL}profile.png`}
         className="h-35 w-35 object-cover md:col-start-2 md:row-start-1 md:h-75 md:w-75 md:self-start md:justify-self-end"
       />
 
@@ -33,7 +33,7 @@ export default function Home({ ready }) {
           <p>i like building things :-)</p>
         </div>
         <a
-          href="/resume.pdf"
+          href={`${import.meta.env.BASE_URL}resume.pdf`}
           target="_blank"
           rel="noopener noreferrer"
           className="group border-aqua hover:text-aqua inline-flex items-center gap-1 self-start border-b-3 font-semibold transition-all duration-200 ease-out md:mt-3.5 md:text-lg"
