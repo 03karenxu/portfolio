@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/inter";
+
+@theme {
+  --color-aqua: #0091ab;
+  --color-light-aqua: #e5f4f6;
+  --color-white: #fafafa;
+  --color-charcoal: #111827;
+  --color-light-gray: #ededed;
+  --font-poppins: "Poppins", sans-serif;
+  --font-merriweather: "Merriweather", serif;
+}
+
+@layer base {
+  body {
+    @apply font-poppins text-charcoal m-0 bg-white;
+  }
+  h1 {
+    @apply text-charcoal font-poppins tracking-wide text-4xl sm:text-5xl lg:text-7xl font-bold m-0;
+  }
+  h2 {
+    @apply text-aqua font-poppins tracking-wide text-4xl sm:text-5xl lg:text-7xl font-bold m-0;
+  }
+  h3 {
+    @apply text-charcoal font-poppins tracking-wide text-3xl md:text-4xl font-semibold m-0;
+  }
+  h4 {
+    @apply text-charcoal font-poppins tracking-wide text-base font-semibold tracking-wide m-0;
+  }
+  p {
+    @apply font-merriweather m-0 text-charcoal;
+  }
+}
+
+@keyframes slideFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-list-item {
+  animation: slideFadeIn 0.5s ease-out forwards;
+}
