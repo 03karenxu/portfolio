@@ -55,9 +55,6 @@ export default function SquigglyArrow({
     };
   }, [containerRef, startRef, endRef]);
 
-  /*
-   * Track visibility and unlock replay when scrolled completely out of view
-   */
   useEffect(() => {
     if (!containerRef?.current) return;
 
@@ -67,7 +64,7 @@ export default function SquigglyArrow({
           setIsVisible(true);
         } else if (entry.intersectionRatio === 0) {
           setIsVisible(false);
-          hasAnimatedRef.current = false; // Reset so it replays upon scrolling back
+          hasAnimatedRef.current = false;
         }
       },
       {
@@ -80,9 +77,6 @@ export default function SquigglyArrow({
     return () => observer.disconnect();
   }, [containerRef]);
 
-  /*
-   * Run entrance animation, respecting both visibility and the ready prop
-   */
   useEffect(() => {
     if (
       !isVisible ||
