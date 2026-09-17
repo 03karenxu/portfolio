@@ -14,7 +14,7 @@ export default function Section({
     >
       <div
         ref={containerRef}
-        className={`-mt-10 flex w-[80vw] max-w-4xl flex-col ${containerClassName}`}
+        className={`flex w-[80vw] max-w-4xl flex-col ${containerClassName}`}
       >
         {children}
       </div>

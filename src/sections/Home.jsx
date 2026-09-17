@@ -12,7 +12,7 @@ export default function Home({ ready }) {
     <Section
       id="home"
       containerRef={gridRef}
-      containerClassName="relative gap-8 md:grid md:grid-cols-2 md:gap-4"
+      containerClassName="relative gap-8 md:grid md:grid-cols-2 md:gap-4 pl-4 md:pl-0"
     >
       <img
         id="home-img-cell"

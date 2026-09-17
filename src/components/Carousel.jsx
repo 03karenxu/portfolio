@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import ArrowIcon from "@/components/ArrowIcon";
-import { TagList } from "./Tag";
+import { HorizontalTagList } from "./Tag";
 
 export default function Carousel({ projects }) {
   const containerRef = useRef(null);
@@ -44,18 +44,18 @@ export default function Carousel({ projects }) {
           {projects.map((project) => (
             <div
               key={project.title}
-              className="bg-light-gray flex h-full w-full shrink-0 snap-center flex-col"
+              className="bg-light-gray grid h-full w-full min-w-0 shrink-0 snap-center grid-rows-2 md:grid-rows-[6fr_5fr]"
             >
-              <div className="bg-aqua h-70 overflow-hidden">
-                <img src="" />
+              <div className="overflow-hidden">
+                <img src={project.img} className="h-full w-full object-cover" />
               </div>
-              <div className="flex flex-col gap-2 px-6 py-5 lg:px-10 lg:py-8">
+              <div className="flex min-w-0 flex-col gap-2 px-6 py-5 lg:px-10 lg:py-8">
                 <a href={project.url} target="_blank">
                   <h3 className="transition-color hover:text-aqua w-fit duration-200 ease-out">
                     {project.title}
                   </h3>
                 </a>
-                <TagList items={project.skills} className="mb-2" />
+                <HorizontalTagList items={project.skills} className="mb-2" />
                 <p>{project.description}</p>
               </div>
             </div>

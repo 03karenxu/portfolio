@@ -63,7 +63,7 @@ function Skills() {
     <ScrollCard
       id="about-desktop-skills-cell"
       background="var(--color-white)"
-      className="flex flex-col px-6 py-5 lg:px-8 lg:py-6"
+      className="flex flex-col px-2 py-5 lg:px-8 lg:py-6"
     >
       <h4>skills</h4>
       <TagList items={skills} className="pb-1" />
