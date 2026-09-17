@@ -1,14 +1,14 @@
 export default function NavBar() {
   const links = [
-    { sectionId: "home", label: "Home" },
-    { sectionId: "about", label: "About" },
-    { sectionId: "projects", label: "Projects" },
+    { sectionId: "home", label: "home" },
+    { sectionId: "about", label: "about" },
+    { sectionId: "projects", label: "projects" },
   ];
 
   const externalLinks = [
     {
       url: "https://www.linkedin.com/in/03karenxu/",
-      label: "LinkedIn",
+      label: "linkedin",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -22,7 +22,7 @@ export default function NavBar() {
     },
     {
       url: "https://github.com/03karenxu",
-      label: "GitHub",
+      label: "github",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +54,7 @@ export default function NavBar() {
         target="_blank"
         className="hover:text-aqua hidden transition-colors duration-100 ease-in md:block"
       >
-        CV
+        cv
       </a>
       {externalLinks.map(({ url, label, icon }) => {
         return (

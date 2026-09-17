@@ -49,7 +49,7 @@ export default function Projects() {
       id="projects"
       containerClassName="h-[75vh] md:h-140 gap-4 items-center justify-center"
     >
-      <div className="flex h-full w-full flex-col gap-4 md:w-[90%]">
+      <div className="flex h-full w-full flex-col gap-4">
         <h3 id="projects-header">projects...</h3>
         <Carousel projects={projects} />
       </div>
