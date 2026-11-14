@@ -10,7 +10,7 @@ const projects = [
     url: "https://03karenxu.github.io/colour-bear/",
   },
   {
-    title: "bioGraph",
+    title: "biograph",
     description:
       "A RAG-based application for accelerating biomedical literature review (NSERC USRA research project)",
     skills: [
