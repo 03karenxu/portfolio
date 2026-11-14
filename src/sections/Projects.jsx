@@ -3,7 +3,14 @@ import Carousel from "@/components/Carousel";
 
 const projects = [
   {
-    title: "bioQuery",
+    title: "colour bear",
+    description: "Generate UI-ready colour palettes from any image",
+    skills: ["React", "Tailwind", "JavaScript"],
+    img: `${import.meta.env.BASE_URL}colour-bear-preview.png`,
+    url: "https://03karenxu.github.io/colour-bear/",
+  },
+  {
+    title: "bioGraph",
     description:
       "A RAG-based application for accelerating biomedical literature review (NSERC USRA research project)",
     skills: [
@@ -15,13 +22,12 @@ const projects = [
       "Milvus",
       "Memgraph",
     ],
-    img: `${import.meta.env.BASE_URL}bioQuery.png`,
+    img: `${import.meta.env.BASE_URL}biograph-preview.png`,
     url: "https://github.com/03karenxu/bio-rag",
   },
   {
     title: "chef's choice",
-    description:
-      "A data-driven way to find restaurants (that won't break the bank)",
+    description: "A data-driven way to find restaurants in Vancouver",
     skills: [
       "React",
       "FastAPI",
@@ -30,7 +36,7 @@ const projects = [
       "SQLAlchemy",
       "Alembic",
     ],
-    img: `${import.meta.env.BASE_URL}chefs_choice.png`,
+    img: `${import.meta.env.BASE_URL}chefs-choice-preview.png`,
     url: "https://github.com/03karenxu/chefs-choice",
   },
   {
@@ -38,7 +44,7 @@ const projects = [
     description:
       "A simple game that teaches you how to properly sort your garbage in Vancouver",
     skills: ["JavaScript", "HTML", "CSS", "React"],
-    img: `${import.meta.env.BASE_URL}sort_it_out.png`,
+    img: `${import.meta.env.BASE_URL}sort-it-out-preview.png`,
     url: "https://github.com/03karenxu/sort-it-out",
   },
 ];

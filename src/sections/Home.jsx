@@ -17,7 +17,7 @@ export default function Home({ ready }) {
       <img
         id="home-img-cell"
         ref={photoRef}
-        src={`${import.meta.env.BASE_URL}profile.png`}
+        src={`${import.meta.env.BASE_URL}profile-photo.png`}
         className="h-35 w-35 object-cover md:col-start-2 md:row-start-1 md:h-75 md:w-75 md:self-start md:justify-self-end"
       />
 
